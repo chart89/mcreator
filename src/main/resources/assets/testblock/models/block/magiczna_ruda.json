@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "testblock:blocks/magicznaruda",
+    "up": "testblock:blocks/magicznaruda",
+    "north": "testblock:blocks/magicznaruda",
+    "east": "testblock:blocks/magicznaruda",
+    "south": "testblock:blocks/magicznaruda",
+    "west": "testblock:blocks/magicznaruda",
+    "particle": "testblock:blocks/magicznaruda"
+  },
+  "render_type": "solid"
+}
