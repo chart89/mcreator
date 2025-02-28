@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "testblock:magiczna_ruda"
+    },
+    "1": {
+      "item": "testblock:magiczna_ruda"
+    },
+    "2": {
+      "item": "testblock:magiczna_ruda"
+    },
+    "3": {
+      "item": "testblock:magiczna_ruda"
+    },
+    "4": {
+      "item": "minecraft:ender_pearl"
+    },
+    "5": {
+      "item": "testblock:magiczna_ruda"
+    },
+    "6": {
+      "item": "testblock:magiczna_ruda"
+    },
+    "7": {
+      "item": "testblock:magiczna_ruda"
+    },
+    "8": {
+      "item": "testblock:magiczna_ruda"
+    }
+  },
+  "result": {
+    "item": "testblock:tower",
+    "count": 1
+  }
+}

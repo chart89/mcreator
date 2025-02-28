@@ -56,7 +56,7 @@ public class MagicznaRudaBlockAddedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if ((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.STONE) {
 			makeGravel(world, x, y, z);
-		} else if ((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.GRASS) {
+		} else if ((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.GRASS_BLOCK) {
 			makeTrees(world, x, y, z);
 		}
 	}

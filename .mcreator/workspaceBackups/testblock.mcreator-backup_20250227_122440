@@ -205,6 +205,14 @@
           }
         ]
       }
+    },
+    {
+      "name": "Tower",
+      "type": "block",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower"
     }
   ],
   "variable_elements": [
@@ -218,6 +226,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.testblock.tower": "Tower",
       "block.testblock.magiczna_ruda": "Magiczna Ruda",
       "block.testblock.test_block": "Test Block"
     }

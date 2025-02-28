@@ -205,6 +205,50 @@
           }
         ]
       }
+    },
+    {
+      "name": "Tower",
+      "type": "block",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower"
+    },
+    {
+      "name": "TowerRecipe",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower_recipe"
+    },
+    {
+      "name": "TowerOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tower_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -218,6 +262,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.testblock.tower": "Tower",
       "block.testblock.magiczna_ruda": "Magiczna Ruda",
       "block.testblock.test_block": "Test Block"
     }
