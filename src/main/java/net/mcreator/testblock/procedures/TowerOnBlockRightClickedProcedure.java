@@ -4,6 +4,8 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.testblock.init.TestblockModBlocks;
+
 public class TowerOnBlockRightClickedProcedure {
 	public static void wallX(LevelAccessor world, int x, int Y, int z) {
 		for (int X = x - 10; X <= x + 10; X++) {
@@ -59,6 +61,20 @@ public class TowerOnBlockRightClickedProcedure {
 		}
 	}
 
+	public static void clearFloor(LevelAccessor world, int x, int Y, int z) {
+		for (int X = x - 9; X <= x + 9; X++) {
+			for (int Z = z - 9; Z <= z + 9; Z++) {
+				world.setBlock(new BlockPos(X, Y, Z), Blocks.AIR.defaultBlockState(), 3);
+			}
+		}
+	}
+
+	public static void makeHole(LevelAccessor world, int x, int y, int z, int depth) {
+		for (int Y = y; Y >= y - depth && Y >= -63; Y--) {
+			clearFloor(world, x, Y, z);
+		}
+	}
+
 	public static int isFour(int count) {
 		if (count == 4) {
 			return 1;
@@ -90,6 +106,11 @@ public class TowerOnBlockRightClickedProcedure {
 		int blockX = (int) x;
 		int blockY = (int) y;
 		int blockZ = (int) z;
-		makeTower(world, blockX, blockY, blockZ, 64);
+		if (world.getBlockState(new BlockPos(x, y + 1, z)).getBlock() == TestblockModBlocks.MAGICZNA_RUDA.get()) {
+			makeTower(world, blockX, blockY, blockZ, 64);
+		} else if (world.getBlockState(new BlockPos(x, y - 1, z)).getBlock() == TestblockModBlocks.MAGICZNA_RUDA.get()) {
+			makeHole(world, blockX, blockY, blockZ, 64);
+		}
+
 	}
 }
