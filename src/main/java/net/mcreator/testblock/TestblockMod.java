@@ -31,6 +31,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.testblock.init.TestblockModItems;
 import net.mcreator.testblock.init.TestblockModFeatures;
+import net.mcreator.testblock.init.TestblockModEntities;
 import net.mcreator.testblock.init.TestblockModBlocks;
 
 import java.util.function.Supplier;
@@ -52,6 +53,7 @@ public class TestblockMod {
 
 		TestblockModBlocks.REGISTRY.register(bus);
 		TestblockModItems.REGISTRY.register(bus);
+		TestblockModEntities.REGISTRY.register(bus);
 
 		TestblockModFeatures.REGISTRY.register(bus);
 

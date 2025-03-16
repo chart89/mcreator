@@ -249,6 +249,66 @@
           }
         ]
       }
+    },
+    {
+      "name": "Wand",
+      "type": "rangeditem",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wand"
+    },
+    {
+      "name": "WandProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "wand_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WandProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": false,
+      "locked_code": true,
+      "registry_name": "wand_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -263,6 +323,7 @@
   "language_map": {
     "en_us": {
       "block.testblock.tower": "Tower",
+      "item.testblock.wand": "Wand",
       "block.testblock.magiczna_ruda": "Magiczna Ruda",
       "block.testblock.test_block": "Test Block"
     }

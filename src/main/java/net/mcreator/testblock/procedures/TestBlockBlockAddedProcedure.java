@@ -9,7 +9,6 @@ public class TestBlockBlockAddedProcedure {
 		int setVal = 0;
 		TestblockModVariables.MapVariables.get(world).clicks = setVal;
 		TestblockModVariables.MapVariables.get(world).syncData(world);
-
 		System.out.println("Wartosc zmiennej clicks: " + TestblockModVariables.MapVariables.get(world).clicks);
 	}
 }

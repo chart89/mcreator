@@ -13,6 +13,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.testblock.item.WandItem;
 import net.mcreator.testblock.TestblockMod;
 
 public class TestblockModItems {
@@ -20,6 +21,7 @@ public class TestblockModItems {
 	public static final RegistryObject<Item> TEST_BLOCK = block(TestblockModBlocks.TEST_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> MAGICZNA_RUDA = block(TestblockModBlocks.MAGICZNA_RUDA, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> TOWER = block(TestblockModBlocks.TOWER, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> WAND = REGISTRY.register("wand", () -> new WandItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -95,6 +95,7 @@ public class TowerOnBlockRightClickedProcedure {
 			count++;
 			Y++;
 		}
+		world.setBlock(new BlockPos(x, Y, z), Blocks.BEDROCK.defaultBlockState(), 3);
 		Y = y + 2;
 		while (Y <= y + height) {
 			makeWindow(world, x, Y, z);
@@ -111,6 +112,5 @@ public class TowerOnBlockRightClickedProcedure {
 		} else if (world.getBlockState(new BlockPos(x, y - 1, z)).getBlock() == TestblockModBlocks.MAGICZNA_RUDA.get()) {
 			makeHole(world, blockX, blockY, blockZ, 64);
 		}
-
 	}
 }
