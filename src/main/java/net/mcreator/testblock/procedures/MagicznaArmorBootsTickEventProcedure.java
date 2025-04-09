@@ -59,8 +59,8 @@ public class MagicznaArmorBootsTickEventProcedure {
 			Block noDiamondBlock = entity.level.getBlockState(new BlockPos(x, y, z)).getBlock();
 			if (noDiamondBlock != Blocks.DIAMOND_BLOCK && noDiamondBlock != Blocks.TNT) {
 				entity.level.setBlock(new BlockPos(x, y, z), block.defaultBlockState(), 3);
-			} else {
-				entity.level.setBlock(new BlockPos(x, y, z), Blocks.TNT.defaultBlockState(), 3);
+			} else if (noDiamondBlock != Blocks.TNT) {
+				entity.level.setBlock(new BlockPos(x + 1, y + 1, z + 1), Blocks.TNT.defaultBlockState(), 3);
 			}
 		}
 		TestblockModVariables.MapVariables.get(entity.level).state = state;
