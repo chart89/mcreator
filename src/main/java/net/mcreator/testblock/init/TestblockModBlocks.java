@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Block;
 import net.mcreator.testblock.block.TowerBlock;
 import net.mcreator.testblock.block.TestBlockBlock;
 import net.mcreator.testblock.block.MagicznaRudaBlock;
+import net.mcreator.testblock.block.LightBlock;
 import net.mcreator.testblock.TestblockMod;
 
 public class TestblockModBlocks {
@@ -20,4 +21,5 @@ public class TestblockModBlocks {
 	public static final RegistryObject<Block> TEST_BLOCK = REGISTRY.register("test_block", () -> new TestBlockBlock());
 	public static final RegistryObject<Block> MAGICZNA_RUDA = REGISTRY.register("magiczna_ruda", () -> new MagicznaRudaBlock());
 	public static final RegistryObject<Block> TOWER = REGISTRY.register("tower", () -> new TowerBlock());
+	public static final RegistryObject<Block> LIGHT = REGISTRY.register("light", () -> new LightBlock());
 }

@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "testblock:magiczna_brylka"
+    },
+    "1": {
+      "item": "testblock:magiczna_brylka"
+    },
+    "2": {
+      "item": "testblock:magiczna_brylka"
+    },
+    "3": {
+      "item": "testblock:magiczna_brylka"
+    },
+    "5": {
+      "item": "testblock:magiczna_brylka"
+    },
+    "6": {
+      "item": "testblock:magiczna_brylka"
+    },
+    "8": {
+      "item": "testblock:magiczna_brylka"
+    }
+  },
+  "result": {
+    "item": "testblock:magiczna_armor_leggings",
+    "count": 1
+  }
+}

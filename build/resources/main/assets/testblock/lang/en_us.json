@@ -1,6 +1,12 @@
 {
   "block.testblock.tower": "Tower",
+  "block.testblock.light": "Light",
+  "item.testblock.magiczna_armor_chestplate": "Magiczna Chestplate",
+  "item.testblock.magiczna_armor_boots": "Magiczna Boots",
   "item.testblock.wand": "Wand",
+  "item.testblock.magiczna_brylka": "Magiczna Brylka",
+  "item.testblock.magiczna_armor_leggings": "Magiczna Leggings",
   "block.testblock.magiczna_ruda": "Magiczna Ruda",
-  "block.testblock.test_block": "Test Block"
+  "block.testblock.test_block": "Test Block",
+  "item.testblock.magiczna_armor_helmet": "Magiczna Helmet"
 }

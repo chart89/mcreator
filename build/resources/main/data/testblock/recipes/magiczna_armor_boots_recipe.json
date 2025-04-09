@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "testblock:magiczna_brylka"
+    },
+    "2": {
+      "item": "testblock:magiczna_brylka"
+    },
+    "3": {
+      "item": "testblock:magiczna_brylka"
+    },
+    "5": {
+      "item": "testblock:magiczna_brylka"
+    }
+  },
+  "result": {
+    "item": "testblock:magiczna_armor_boots",
+    "count": 1
+  }
+}

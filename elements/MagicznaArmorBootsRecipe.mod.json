@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MagicznaBrylka"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MagicznaBrylka"
+      },
+      {
+        "value": "CUSTOM:MagicznaBrylka"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MagicznaBrylka"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MagicznaArmor.boots"
+    },
+    "name": "magiczna_armor_boots_recipe",
+    "namespace": "mod"
+  }
+}

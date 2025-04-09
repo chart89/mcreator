@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "testblock:blocks/light",
+    "up": "testblock:blocks/light",
+    "north": "testblock:blocks/light",
+    "east": "testblock:blocks/light",
+    "south": "testblock:blocks/light",
+    "west": "testblock:blocks/light",
+    "particle": "testblock:blocks/light"
+  },
+  "render_type": "translucent"
+}

@@ -92,6 +92,11 @@ public class TestblockModVariables {
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "testblock_mapvars";
 		public double clicks = 0;
+		public double x = 0;
+		public double y = 0;
+		public double z = 0;
+		public boolean state = false;
+		public boolean button = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -101,11 +106,21 @@ public class TestblockModVariables {
 
 		public void read(CompoundTag nbt) {
 			clicks = nbt.getDouble("clicks");
+			x = nbt.getDouble("x");
+			y = nbt.getDouble("y");
+			z = nbt.getDouble("z");
+			state = nbt.getBoolean("state");
+			button = nbt.getBoolean("button");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putDouble("clicks", clicks);
+			nbt.putDouble("x", x);
+			nbt.putDouble("y", y);
+			nbt.putDouble("z", z);
+			nbt.putBoolean("state", state);
+			nbt.putBoolean("button", button);
 			return nbt;
 		}
 
